@@ -11,8 +11,16 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
-/* landing */
+hr {
+    height: 1rem;
+    background-color: white;
+    width: 100%;
+    border: 1px solid white;
+    margin: 2rem 0;
+    border-radius: 5px;
+}
 
+/*menu*/
 #landing {
     display: flex;
     flex-direction: column;
@@ -28,8 +36,16 @@ html {
     width: 30%;
 }
 
+.btn-wrap {
+    display: flex;
+}
+
+.btn-wrap a {
+    text-decoration: none;
+}
+
 .btn-index {
-    margin-top: 2rem;
+    margin: 2rem 1rem;
     padding: .3rem 1rem;
     font-size: 18px;
     cursor: pointer;
@@ -76,16 +92,16 @@ html {
     width: 15%;
 }
 
-/* end landing */
-
-/* Menu */
+.light {
+    font-weight: 300;
+    margin-left: 1rem;
+}
 
 #menu {
     display: flex;
     flex-direction: column;
     width: 90%;
     margin: 4rem auto;
-
     border-radius: 10px;
     background-color: #efefef;
 }
@@ -95,7 +111,7 @@ h6 {
     font-weight: 700;
     font-size: 30px;
     text-transform: uppercase;
-    margin-bottom: 3rem;
+    margin: 3rem auto 1rem auto;
 }
 
 .titolo h1 {
@@ -136,39 +152,31 @@ h6 {
     font-weight: 700;
 }
 
+.footer {
+    background-color: #1d1a1a;
+    padding: .2rem;
+    text-align: center;
+    font-size: .8rem;
+    color: white;
+}
 
+.footer a {
+    color: white;
+    text-decoration: none;
+}
 
+.footer a:hover {
+    color: rgb(156, 156, 156);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*menu*/
 /* accordion */
-
 .accordion {
     width: 90%;
     max-width: 1000px;
-    margin: 2rem auto;
+    margin-bottom: 1rem;
+    margin-right: auto;
+    margin-left: auto;
     height: 100%;
 }
 
@@ -192,7 +200,7 @@ h6 {
 }
 
 .accordion-item-header::after {
-    content: "🍷";
+    content: "O";
     font-size: 2rem;
     position: absolute;
     right: 1rem;
@@ -200,8 +208,7 @@ h6 {
 }
 
 .accordion-item-header.active::after {
-    content: "🍷";
-    transform: rotate(45deg);
+    content: "X";
 
 }
 
@@ -221,6 +228,7 @@ h6 {
 .accordion-item-body-content ul {
     padding: 1rem 1rem 0 1rem;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     line-height: 1.5rem;
 }
@@ -239,3 +247,91 @@ h6 {
 }
 
 /* end accordion */
+
+
+@media only screen and (max-width: 1300px) {
+    .logo {
+        width: 70%;
+    }
+
+    .divisorio {
+        width: 45%;
+    }
+
+    .btn-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-index {
+        margin-top: 1rem;
+        padding: .5rem;
+        font-size: 14px;
+        cursor: pointer;
+        color: white;
+        background-color: #1d1a1a;
+        border-radius: 2px;
+        transition: 0.2s ease-out;
+        border: 1px #231f20 solid;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    h6 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 25px;
+        text-transform: uppercase;
+        margin: 3rem auto 1rem auto;
+    }
+
+    .titolo h1 {
+        font-weight: 300;
+        letter-spacing: 3px;
+        text-align: right;
+        margin-right: 1rem;
+        font-style: oblique;
+        font-size: 25px;
+    }
+
+    .food-items {
+        padding: 1rem;
+        justify-content: space-around;
+    }
+
+    .food-items h3 {
+        font-size: 25px;
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+
+    .food-items ul {
+        font-size: 25px;
+    }
+
+    .food-items li {
+        font-size: 18px;
+        list-style-type: none;
+        margin-left: 2rem;
+    }
+
+    .food-items li.letters {
+        font-size: 12px;
+        margin: .5rem 2rem;
+        font-style: oblique;
+    }
+
+    .food-items li.strong {
+        font-weight: 700;
+        margin-left: 1rem;
+    }
+}
