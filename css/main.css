@@ -12,12 +12,20 @@ html {
 }
 
 hr {
-    height: 1rem;
+    height: .5rem;
     background-color: white;
     width: 100%;
     border: 1px solid white;
     margin: 2rem 0;
     border-radius: 2px;
+}
+
+.divisione_end {
+    height: 1px;
+    background-color: #1d1a1a;
+    width: 50%;
+    margin-left: auto;
+    margin-right: 5rem;
 }
 
 /*menu*/
@@ -127,6 +135,26 @@ h6 {
     font-style: oblique;
 }
 
+.titolo_2 {
+    margin-top: 10rem;
+}
+
+.titolo_2 h1 {
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-align: right;
+    margin-right: 5rem;
+}
+
+.titolo_2 p {
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-align: right;
+    margin-right: 5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
 .food-items {
     padding: 1rem;
     justify-content: space-around;
@@ -172,6 +200,30 @@ h6 {
 
 .footer a:hover {
     color: rgb(156, 156, 156);
+}
+
+.scroll-btn {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background: white;
+    border: 1px solid #1d1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .5rem;
+    color: #1d1a1a;
+    box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    transition: ease-in .3s;
+
+}
+
+.scroll-btn:hover {
+    background: #1d1a1a;
+    color: white;
 }
 
 /*menu*/
@@ -280,17 +332,6 @@ h6 {
         border: 1px #231f20 solid;
     }
 
-
-
-
-
-
-
-
-
-
-
-
     h6 {
         text-align: center;
         font-weight: 700;
@@ -338,5 +379,47 @@ h6 {
     .food-items li.strong {
         font-weight: 700;
         margin-left: 1rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .titolo_2 {
+        margin-top: 7rem;
+    }
+
+    .titolo_2 h1 {
+        font-weight: 500;
+        letter-spacing: 3px;
+        text-align: right;
+        margin-right: 2rem;
+        font-size: 25px;
+    }
+
+    .titolo_2 p {
+        font-weight: 300;
+        letter-spacing: 3px;
+        text-align: right;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        font-size: 12px;
+    }
+
+    .divisione_end {
+        height: 1px;
+        background-color: #1d1a1a;
+        width: 50%;
+        margin-left: auto;
+        margin-right: 2rem;
     }
 }
