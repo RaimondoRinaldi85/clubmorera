@@ -96,10 +96,6 @@ hr {
     color: #786a6a;
 }
 
-.divisorio {
-    width: 15%;
-}
-
 .light {
     font-weight: 300;
     margin-left: 1rem;
@@ -161,6 +157,7 @@ h6 {
     margin-top: 2rem;
     margin-bottom: .5rem;
     font-weight: 500;
+    letter-spacing: 2px;
 }
 
 .food-items ul {
@@ -182,6 +179,7 @@ h6 {
 .food-items li.strong {
     font-weight: 500;
     margin-left: 3rem;
+    letter-spacing: 2px;
 }
 
 .footer {
@@ -308,10 +306,6 @@ h6 {
 @media only screen and (max-width: 1300px) {
     .logo {
         width: 70%;
-    }
-
-    .divisorio {
-        width: 45%;
     }
 
     .btn-wrap {
