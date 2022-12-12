@@ -409,4 +409,10 @@ h6 {
         margin-left: auto;
         margin-right: 2rem;
     }
+
+    #menu {
+        width: 95%;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+        border: #1d1a1a 1px solid;
+    }
 }
